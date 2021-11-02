@@ -65,7 +65,7 @@
   <bpmn2:itemDefinition id="__4E9B4D75-2C24-43C2-A317-EA810296EB2A_UrlInputXItem" structureRef="String"/>
   <bpmn2:itemDefinition id="__4E9B4D75-2C24-43C2-A317-EA810296EB2A_UsernameInputXItem" structureRef="String"/>
   <bpmn2:itemDefinition id="__4E9B4D75-2C24-43C2-A317-EA810296EB2A_ResultOutputXItem" structureRef="String"/>
-  <bpmn2:process id="db-provisioning.ProvisionDB" drools:packageName="com.rbc.db_provisioning" drools:version="1.0" drools:adHoc="false" name="ProvisionDB" isExecutable="true" processType="Public">
+  <bpmn2:process id="db-provisioning.ProvisionDB" drools:packageName="com.rbc.db_provisioning" drools:version="1.0" drools:adHoc="false" name="ProvisionDB_RBC" isExecutable="true" processType="Public">
     <bpmn2:property id="vendor" itemSubjectRef="_vendorItem" name="vendor"/>
     <bpmn2:property id="size" itemSubjectRef="_sizeItem" name="size"/>
     <bpmn2:property id="unitOfSize" itemSubjectRef="_unitOfSizeItem" name="unitOfSize"/>
