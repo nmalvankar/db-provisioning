@@ -6,12 +6,44 @@ package com.rbc.db_provisioning;
 
 public class Node implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Node() {
-    }
+	private java.util.List<java.lang.String> properties;
+	private java.lang.String vmName;
+	private java.lang.String networkProfileId;
 
+	public Node() {
+	}
 
+	public java.util.List<java.lang.String> getProperties() {
+		return this.properties;
+	}
 
+	public void setProperties(java.util.List<java.lang.String> properties) {
+		this.properties = properties;
+	}
+
+	public java.lang.String getVmName() {
+		return this.vmName;
+	}
+
+	public void setVmName(java.lang.String vmName) {
+		this.vmName = vmName;
+	}
+
+	public java.lang.String getNetworkProfileId() {
+		return this.networkProfileId;
+	}
+
+	public void setNetworkProfileId(java.lang.String networkProfileId) {
+		this.networkProfileId = networkProfileId;
+	}
+
+	public Node(java.util.List<java.lang.String> properties,
+			java.lang.String vmName, java.lang.String networkProfileId) {
+		this.properties = properties;
+		this.vmName = vmName;
+		this.networkProfileId = networkProfileId;
+	}
 
 }
