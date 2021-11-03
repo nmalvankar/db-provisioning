@@ -6,12 +6,33 @@ package com.rbc.db_provisioning;
 
 public class MonthlySchedule implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public MonthlySchedule() {
-    }
+	private boolean enabled;
+	private int dayOfMonth;
 
+	public MonthlySchedule() {
+	}
 
+	public boolean isEnabled() {
+		return this.enabled;
+	}
 
+	public void setEnabled(boolean enabled) {
+		this.enabled = enabled;
+	}
+
+	public int getDayOfMonth() {
+		return this.dayOfMonth;
+	}
+
+	public void setDayOfMonth(int dayOfMonth) {
+		this.dayOfMonth = dayOfMonth;
+	}
+
+	public MonthlySchedule(boolean enabled, int dayOfMonth) {
+		this.enabled = enabled;
+		this.dayOfMonth = dayOfMonth;
+	}
 
 }
