@@ -18,6 +18,24 @@ public class EraRequest implements java.io.Serializable {
 	private java.lang.String dbParameterProfileId;
 	private com.rbc.db_provisioning.TimeMachineInfo timeMachineInfo;
 
+	private java.util.List<com.rbc.db_provisioning.ActionArgument> actionArguments;
+
+	private boolean createDbserver;
+
+	private int nodeCount;
+
+	private java.lang.String nxClusterId;
+
+	private java.lang.String sshPublicKey;
+
+	private boolean clustered;
+
+	private java.util.List<com.rbc.db_provisioning.Node> nodes;
+
+	private java.lang.String vmPassword;
+
+	private boolean autoTuneStagingDrive;
+
 	public EraRequest() {
 	}
 
@@ -95,14 +113,95 @@ public class EraRequest implements java.io.Serializable {
 		this.timeMachineInfo = timeMachineInfo;
 	}
 
-	public EraRequest(java.lang.String databaseType, java.lang.String name,
+	public java.util.List<com.rbc.db_provisioning.ActionArgument> getActionArguments() {
+		return this.actionArguments;
+	}
+
+	public void setActionArguments(
+			java.util.List<com.rbc.db_provisioning.ActionArgument> actionArguments) {
+		this.actionArguments = actionArguments;
+	}
+
+	public boolean isCreateDbserver() {
+		return this.createDbserver;
+	}
+
+	public void setCreateDbserver(boolean createDbserver) {
+		this.createDbserver = createDbserver;
+	}
+
+	public int getNodeCount() {
+		return this.nodeCount;
+	}
+
+	public void setNodeCount(int nodeCount) {
+		this.nodeCount = nodeCount;
+	}
+
+	public java.lang.String getNxClusterId() {
+		return this.nxClusterId;
+	}
+
+	public void setNxClusterId(java.lang.String nxClusterId) {
+		this.nxClusterId = nxClusterId;
+	}
+
+	public java.lang.String getSshPublicKey() {
+		return this.sshPublicKey;
+	}
+
+	public void setSshPublicKey(java.lang.String sshPublicKey) {
+		this.sshPublicKey = sshPublicKey;
+	}
+
+	public boolean isClustered() {
+		return this.clustered;
+	}
+
+	public void setClustered(boolean clustered) {
+		this.clustered = clustered;
+	}
+
+	public java.util.List<com.rbc.db_provisioning.Node> getNodes() {
+		return this.nodes;
+	}
+
+	public void setNodes(java.util.List<com.rbc.db_provisioning.Node> nodes) {
+		this.nodes = nodes;
+	}
+
+	public java.lang.String getVmPassword() {
+		return this.vmPassword;
+	}
+
+	public void setVmPassword(java.lang.String vmPassword) {
+		this.vmPassword = vmPassword;
+	}
+
+	public boolean isAutoTuneStagingDrive() {
+		return this.autoTuneStagingDrive;
+	}
+
+	public void setAutoTuneStagingDrive(boolean autoTuneStagingDrive) {
+		this.autoTuneStagingDrive = autoTuneStagingDrive;
+	}
+
+	public EraRequest(
+			java.lang.String databaseType,
+			java.lang.String name,
 			java.lang.String databaseDescription,
 			java.lang.String softwareProfileId,
 			java.lang.String softwareProfileVersionId,
 			java.lang.String computeProfileId,
 			java.lang.String networkProfileId,
 			java.lang.String dbParameterProfileId,
-			com.rbc.db_provisioning.TimeMachineInfo timeMachineInfo) {
+			com.rbc.db_provisioning.TimeMachineInfo timeMachineInfo,
+			java.util.List<com.rbc.db_provisioning.ActionArgument> actionArguments,
+			boolean createDbserver, int nodeCount,
+			java.lang.String nxClusterId, java.lang.String sshPublicKey,
+			boolean clustered,
+			java.util.List<com.rbc.db_provisioning.Node> nodes,
+			java.lang.String vmPassword, boolean autoTuneStagingDrive) {
 		this.databaseType = databaseType;
 		this.name = name;
 		this.databaseDescription = databaseDescription;
@@ -112,6 +211,15 @@ public class EraRequest implements java.io.Serializable {
 		this.networkProfileId = networkProfileId;
 		this.dbParameterProfileId = dbParameterProfileId;
 		this.timeMachineInfo = timeMachineInfo;
+		this.actionArguments = actionArguments;
+		this.createDbserver = createDbserver;
+		this.nodeCount = nodeCount;
+		this.nxClusterId = nxClusterId;
+		this.sshPublicKey = sshPublicKey;
+		this.clustered = clustered;
+		this.nodes = nodes;
+		this.vmPassword = vmPassword;
+		this.autoTuneStagingDrive = autoTuneStagingDrive;
 	}
 
 }
