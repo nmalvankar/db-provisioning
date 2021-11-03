@@ -6,12 +6,44 @@ package com.rbc.db_provisioning;
 
 public class ContinuousSchedule implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public ContinuousSchedule() {
-    }
+	private java.lang.Boolean enabled;
+	private int logBackupInterval;
+	private int snapshotsPerDay;
 
+	public ContinuousSchedule() {
+	}
 
+	public java.lang.Boolean getEnabled() {
+		return this.enabled;
+	}
 
+	public void setEnabled(java.lang.Boolean enabled) {
+		this.enabled = enabled;
+	}
+
+	public int getLogBackupInterval() {
+		return this.logBackupInterval;
+	}
+
+	public void setLogBackupInterval(int logBackupInterval) {
+		this.logBackupInterval = logBackupInterval;
+	}
+
+	public int getSnapshotsPerDay() {
+		return this.snapshotsPerDay;
+	}
+
+	public void setSnapshotsPerDay(int snapshotsPerDay) {
+		this.snapshotsPerDay = snapshotsPerDay;
+	}
+
+	public ContinuousSchedule(java.lang.Boolean enabled, int logBackupInterval,
+			int snapshotsPerDay) {
+		this.enabled = enabled;
+		this.logBackupInterval = logBackupInterval;
+		this.snapshotsPerDay = snapshotsPerDay;
+	}
 
 }
