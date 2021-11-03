@@ -8,7 +8,110 @@ public class EraRequest implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
+	private java.lang.String databaseType;
+	private java.lang.String name;
+	private java.lang.String databaseDescription;
+	private java.lang.String softwareProfileId;
+	private java.lang.String softwareProfileVersionId;
+	private java.lang.String computeProfileId;
+	private java.lang.String networkProfileId;
+	private java.lang.String dbParameterProfileId;
+	private com.rbc.db_provisioning.TimeMachineInfo timeMachineInfo;
+
 	public EraRequest() {
+	}
+
+	public java.lang.String getDatabaseType() {
+		return this.databaseType;
+	}
+
+	public void setDatabaseType(java.lang.String databaseType) {
+		this.databaseType = databaseType;
+	}
+
+	public java.lang.String getName() {
+		return this.name;
+	}
+
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public java.lang.String getDatabaseDescription() {
+		return this.databaseDescription;
+	}
+
+	public void setDatabaseDescription(java.lang.String databaseDescription) {
+		this.databaseDescription = databaseDescription;
+	}
+
+	public java.lang.String getSoftwareProfileId() {
+		return this.softwareProfileId;
+	}
+
+	public void setSoftwareProfileId(java.lang.String softwareProfileId) {
+		this.softwareProfileId = softwareProfileId;
+	}
+
+	public java.lang.String getSoftwareProfileVersionId() {
+		return this.softwareProfileVersionId;
+	}
+
+	public void setSoftwareProfileVersionId(
+			java.lang.String softwareProfileVersionId) {
+		this.softwareProfileVersionId = softwareProfileVersionId;
+	}
+
+	public java.lang.String getComputeProfileId() {
+		return this.computeProfileId;
+	}
+
+	public void setComputeProfileId(java.lang.String computeProfileId) {
+		this.computeProfileId = computeProfileId;
+	}
+
+	public java.lang.String getNetworkProfileId() {
+		return this.networkProfileId;
+	}
+
+	public void setNetworkProfileId(java.lang.String networkProfileId) {
+		this.networkProfileId = networkProfileId;
+	}
+
+	public java.lang.String getDbParameterProfileId() {
+		return this.dbParameterProfileId;
+	}
+
+	public void setDbParameterProfileId(java.lang.String dbParameterProfileId) {
+		this.dbParameterProfileId = dbParameterProfileId;
+	}
+
+	public com.rbc.db_provisioning.TimeMachineInfo getTimeMachineInfo() {
+		return this.timeMachineInfo;
+	}
+
+	public void setTimeMachineInfo(
+			com.rbc.db_provisioning.TimeMachineInfo timeMachineInfo) {
+		this.timeMachineInfo = timeMachineInfo;
+	}
+
+	public EraRequest(java.lang.String databaseType, java.lang.String name,
+			java.lang.String databaseDescription,
+			java.lang.String softwareProfileId,
+			java.lang.String softwareProfileVersionId,
+			java.lang.String computeProfileId,
+			java.lang.String networkProfileId,
+			java.lang.String dbParameterProfileId,
+			com.rbc.db_provisioning.TimeMachineInfo timeMachineInfo) {
+		this.databaseType = databaseType;
+		this.name = name;
+		this.databaseDescription = databaseDescription;
+		this.softwareProfileId = softwareProfileId;
+		this.softwareProfileVersionId = softwareProfileVersionId;
+		this.computeProfileId = computeProfileId;
+		this.networkProfileId = networkProfileId;
+		this.dbParameterProfileId = dbParameterProfileId;
+		this.timeMachineInfo = timeMachineInfo;
 	}
 
 }
