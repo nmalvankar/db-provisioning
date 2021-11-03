@@ -6,12 +6,85 @@ package com.rbc.db_provisioning;
 
 public class Schedule implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Schedule() {
-    }
+	private com.rbc.db_provisioning.SnapshotTimeOfDay snapshotTimeOfDay;
+	private com.rbc.db_provisioning.ContinuousSchedule continuousSchedule;
+	private com.rbc.db_provisioning.WeeklySchedule weeklySchedule;
+	private com.rbc.db_provisioning.MonthlySchedule monthlySchedule;
+	private com.rbc.db_provisioning.QuartelySchedule quartelySchedule;
+	private com.rbc.db_provisioning.YearlySchedule yearlySchedule;
 
+	public Schedule() {
+	}
 
+	public com.rbc.db_provisioning.SnapshotTimeOfDay getSnapshotTimeOfDay() {
+		return this.snapshotTimeOfDay;
+	}
 
+	public void setSnapshotTimeOfDay(
+			com.rbc.db_provisioning.SnapshotTimeOfDay snapshotTimeOfDay) {
+		this.snapshotTimeOfDay = snapshotTimeOfDay;
+	}
+
+	public com.rbc.db_provisioning.ContinuousSchedule getContinuousSchedule() {
+		return this.continuousSchedule;
+	}
+
+	public void setContinuousSchedule(
+			com.rbc.db_provisioning.ContinuousSchedule continuousSchedule) {
+		this.continuousSchedule = continuousSchedule;
+	}
+
+	public com.rbc.db_provisioning.WeeklySchedule getWeeklySchedule() {
+		return this.weeklySchedule;
+	}
+
+	public void setWeeklySchedule(
+			com.rbc.db_provisioning.WeeklySchedule weeklySchedule) {
+		this.weeklySchedule = weeklySchedule;
+	}
+
+	public com.rbc.db_provisioning.MonthlySchedule getMonthlySchedule() {
+		return this.monthlySchedule;
+	}
+
+	public void setMonthlySchedule(
+			com.rbc.db_provisioning.MonthlySchedule monthlySchedule) {
+		this.monthlySchedule = monthlySchedule;
+	}
+
+	public com.rbc.db_provisioning.QuartelySchedule getQuartelySchedule() {
+		return this.quartelySchedule;
+	}
+
+	public void setQuartelySchedule(
+			com.rbc.db_provisioning.QuartelySchedule quartelySchedule) {
+		this.quartelySchedule = quartelySchedule;
+	}
+
+	public com.rbc.db_provisioning.YearlySchedule getYearlySchedule() {
+		return this.yearlySchedule;
+	}
+
+	public void setYearlySchedule(
+			com.rbc.db_provisioning.YearlySchedule yearlySchedule) {
+		this.yearlySchedule = yearlySchedule;
+	}
+
+	public Schedule(
+			com.rbc.db_provisioning.SnapshotTimeOfDay snapshotTimeOfDay,
+			com.rbc.db_provisioning.ContinuousSchedule continuousSchedule,
+			com.rbc.db_provisioning.WeeklySchedule weeklySchedule,
+			com.rbc.db_provisioning.MonthlySchedule monthlySchedule,
+			com.rbc.db_provisioning.QuartelySchedule quartelySchedule,
+			com.rbc.db_provisioning.YearlySchedule yearlySchedule) {
+		this.snapshotTimeOfDay = snapshotTimeOfDay;
+		this.continuousSchedule = continuousSchedule;
+		this.weeklySchedule = weeklySchedule;
+		this.monthlySchedule = monthlySchedule;
+		this.quartelySchedule = quartelySchedule;
+		this.yearlySchedule = yearlySchedule;
+	}
 
 }
