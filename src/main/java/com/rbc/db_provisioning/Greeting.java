@@ -6,12 +6,23 @@ package com.rbc.db_provisioning;
 
 public class Greeting implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Greeting() {
-    }
+	private java.lang.String name;
 
+	public Greeting() {
+	}
 
+	public java.lang.String getName() {
+		return this.name;
+	}
 
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public Greeting(java.lang.String name) {
+		this.name = name;
+	}
 
 }
