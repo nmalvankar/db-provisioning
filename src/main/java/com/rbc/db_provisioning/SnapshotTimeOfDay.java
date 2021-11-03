@@ -6,12 +6,43 @@ package com.rbc.db_provisioning;
 
 public class SnapshotTimeOfDay implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public SnapshotTimeOfDay() {
-    }
+	private int hours;
+	private int minutes;
+	private int seconds;
 
+	public SnapshotTimeOfDay() {
+	}
 
+	public int getHours() {
+		return this.hours;
+	}
 
+	public void setHours(int hours) {
+		this.hours = hours;
+	}
+
+	public int getMinutes() {
+		return this.minutes;
+	}
+
+	public void setMinutes(int minutes) {
+		this.minutes = minutes;
+	}
+
+	public int getSeconds() {
+		return this.seconds;
+	}
+
+	public void setSeconds(int seconds) {
+		this.seconds = seconds;
+	}
+
+	public SnapshotTimeOfDay(int hours, int minutes, int seconds) {
+		this.hours = hours;
+		this.minutes = minutes;
+		this.seconds = seconds;
+	}
 
 }
