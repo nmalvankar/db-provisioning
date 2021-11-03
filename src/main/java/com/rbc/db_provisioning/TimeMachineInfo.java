@@ -13,6 +13,10 @@ public class TimeMachineInfo implements java.io.Serializable {
 	private java.lang.String slaId;
 	private com.rbc.db_provisioning.Schedule schedule;
 
+	private java.util.List<java.lang.String> tags;
+
+	private boolean autoTuneLogDrive;
+
 	public TimeMachineInfo() {
 	}
 
@@ -48,12 +52,31 @@ public class TimeMachineInfo implements java.io.Serializable {
 		this.schedule = schedule;
 	}
 
+	public java.util.List<java.lang.String> getTags() {
+		return this.tags;
+	}
+
+	public void setTags(java.util.List<java.lang.String> tags) {
+		this.tags = tags;
+	}
+
+	public boolean isAutoTuneLogDrive() {
+		return this.autoTuneLogDrive;
+	}
+
+	public void setAutoTuneLogDrive(boolean autoTuneLogDrive) {
+		this.autoTuneLogDrive = autoTuneLogDrive;
+	}
+
 	public TimeMachineInfo(java.lang.String name, java.lang.String description,
-			java.lang.String slaId, com.rbc.db_provisioning.Schedule schedule) {
+			java.lang.String slaId, com.rbc.db_provisioning.Schedule schedule,
+			java.util.List<java.lang.String> tags, boolean autoTuneLogDrive) {
 		this.name = name;
 		this.description = description;
 		this.slaId = slaId;
 		this.schedule = schedule;
+		this.tags = tags;
+		this.autoTuneLogDrive = autoTuneLogDrive;
 	}
 
 }
