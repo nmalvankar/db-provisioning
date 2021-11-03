@@ -58,7 +58,7 @@
         "displayName" : "Rest",
         "category" : "jbpm-workitems-rest",
         "description" : "",
-        "defaultHandler" : "mvel: new org.jbpm.process.workitem.rest.RESTWorkItemHandler(classLoader)",
+        "defaultHandler" : "mvel: new org.jbpm.process.workitem.rest.RESTWorkItemHandler()",
         "documentation" : "jbpm-workitems-rest/index.html",
         "icon" : "defaultresticon.png",
 
