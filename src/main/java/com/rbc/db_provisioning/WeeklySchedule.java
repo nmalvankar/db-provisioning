@@ -6,12 +6,44 @@ package com.rbc.db_provisioning;
 
 public class WeeklySchedule implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public WeeklySchedule() {
-    }
+	private boolean enabled;
+	private java.lang.String startMonth;
+	private int dayOfMonth;
 
+	public WeeklySchedule() {
+	}
 
+	public boolean isEnabled() {
+		return this.enabled;
+	}
 
+	public void setEnabled(boolean enabled) {
+		this.enabled = enabled;
+	}
+
+	public java.lang.String getStartMonth() {
+		return this.startMonth;
+	}
+
+	public void setStartMonth(java.lang.String startMonth) {
+		this.startMonth = startMonth;
+	}
+
+	public int getDayOfMonth() {
+		return this.dayOfMonth;
+	}
+
+	public void setDayOfMonth(int dayOfMonth) {
+		this.dayOfMonth = dayOfMonth;
+	}
+
+	public WeeklySchedule(boolean enabled, java.lang.String startMonth,
+			int dayOfMonth) {
+		this.enabled = enabled;
+		this.startMonth = startMonth;
+		this.dayOfMonth = dayOfMonth;
+	}
 
 }
