@@ -9,8 +9,7 @@ public class WeeklySchedule implements java.io.Serializable {
 	static final long serialVersionUID = 1L;
 
 	private boolean enabled;
-	private java.lang.String startMonth;
-	private int dayOfMonth;
+	private java.lang.String dayOfWeek;
 
 	public WeeklySchedule() {
 	}
@@ -23,27 +22,17 @@ public class WeeklySchedule implements java.io.Serializable {
 		this.enabled = enabled;
 	}
 
-	public java.lang.String getStartMonth() {
-		return this.startMonth;
+	public java.lang.String getDayOfWeek() {
+		return this.dayOfWeek;
 	}
 
-	public void setStartMonth(java.lang.String startMonth) {
-		this.startMonth = startMonth;
+	public void setDayOfWeek(java.lang.String dayOfWeek) {
+		this.dayOfWeek = dayOfWeek;
 	}
 
-	public int getDayOfMonth() {
-		return this.dayOfMonth;
-	}
-
-	public void setDayOfMonth(int dayOfMonth) {
-		this.dayOfMonth = dayOfMonth;
-	}
-
-	public WeeklySchedule(boolean enabled, java.lang.String startMonth,
-			int dayOfMonth) {
+	public WeeklySchedule(boolean enabled, java.lang.String dayOfWeek) {
 		this.enabled = enabled;
-		this.startMonth = startMonth;
-		this.dayOfMonth = dayOfMonth;
+		this.dayOfWeek = dayOfWeek;
 	}
 
 }
